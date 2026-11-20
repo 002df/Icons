@@ -8,7 +8,7 @@ from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CATEGORIES = ("apps", "flags", "groups")
+CATEGORIES = ("apps", "groups", "flags")
 RAW_ROOT = "https://raw.githubusercontent.com/jennieveloramae/NetKit/main/"
 
 
