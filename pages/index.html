@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Browse NetKit PNG icons for apps, regions, and proxy groups, and copy their GitHub Raw URLs.">
+  <title>NetKit Icons</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true"></span>
+        NetKit
+      </a>
+      <a class="repository" href="https://github.com/jennieveloramae/NetKit">GitHub</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="intro" aria-labelledby="title">
+      <h1 id="title">NetKit Icons</h1>
+      <p>PNG icons for apps, regions, and proxy groups.</p>
+      <p class="translation" lang="zh-Hans">应用、地区与策略组图标</p>
+      <label class="search">
+        <span class="visually-hidden">Search icons</span>
+        <span class="search-mark" aria-hidden="true"></span>
+        <input id="search" type="search" placeholder="Search icons…" autocomplete="off" spellcheck="false">
+      </label>
+    </section>
+
+    <div class="gallery-controls">
+      <div class="filters" role="group" aria-label="Filter by category">
+        <button type="button" data-category="all" aria-pressed="true">All <span></span></button>
+        <button type="button" data-category="apps" aria-pressed="false">Apps <span></span></button>
+        <button type="button" data-category="flags" aria-pressed="false">Flags <span></span></button>
+        <button type="button" data-category="groups" aria-pressed="false">Groups <span></span></button>
+      </div>
+      <p id="results" role="status">Loading icons…</p>
+    </div>
+
+    <ul class="gallery" id="gallery" aria-label="Icons" role="list"></ul>
+    <noscript>Enable JavaScript to browse and search the icon collection.</noscript>
+  </main>
+
+  <p id="copy-status" class="visually-hidden" role="status"></p>
+  <dialog id="copy-dialog" aria-labelledby="copy-title">
+    <form method="dialog">
+      <h2 id="copy-title">Copy Raw URL</h2>
+      <p>Select and copy the link below.</p>
+      <input id="manual-url" type="text" aria-label="Raw URL" readonly autofocus>
+      <button type="submit">Done</button>
+    </form>
+  </dialog>
+</body>
+</html>
