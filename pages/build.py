@@ -24,7 +24,7 @@ def build(output):
         if not source_directory.exists():
             # Git omits empty directories when the last icon is removed.
             continue
-        for source in source_directory.iterdir():
+        for source in sorted(source_directory.iterdir(), key=lambda path: (path.name.casefold(), path.name)):
             if not source.is_file() or source.suffix.lower() != ".png":
                 continue
             if category == "flags" and source.name.casefold() == "tw.png":
@@ -43,7 +43,6 @@ def build(output):
                 "rawUrl": RAW_ROOT + url_path,
             })
 
-    icons.sort(key=lambda icon: (icon["filename"].casefold(), icon["filename"], icon["category"]))
     (output / "icons.json").write_text(
         json.dumps(icons, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
