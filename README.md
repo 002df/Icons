@@ -6,33 +6,20 @@
 
 支持 **Mihomo、sing-box、Surge、Quantumult X、Loon、Egern** 等主流客户端，致力于让网络配置更加简洁、直观、易于管理。
 
-## Features · 项目内容
+## NetKit Icons · 图标站
 
-| 分类 | 说明 |
-| --- | --- |
-| **Icons** | 统一风格的应用、地区及策略组图标 |
-| **Configs** | 自用网络配置与参考示例（计划补充） |
-| **Rules** | 自用多客户端兼容的网络分流规则（计划补充） |
-| **Scripts & Modules** | 实用脚本及模块（计划补充） |
+> **[打开 NetKit 图标站](https://jennieveloramae.github.io/NetKit/)**
+>
+> 按分类浏览或按名称搜索，点击 `Copy URL` 获取可直接粘贴到客户端配置中的 GitHub Raw 链接。
 
-
-## Icons · 图标资源
-
-提供统一视觉风格的 PNG 图标，适用于应用分流、节点分类、策略选择及其他网络配置场景。
-
-| Applications | Regions | Proxy Groups |
+| Apps · 应用与服务 | Flags · 地区 | Groups · 策略组 |
 | :---: | :---: | :---: |
-| ![Apps](icon/apps/Spotify.png) | ![Flags](icon/flags/US.png) | ![Groups](icon/groups/Planet.png) |
-| 应用与服务 | 地区图标 | 策略组图标 |
+| <img src="icon/apps/Spotify.png" alt="Spotify" width="64" height="64"> | <img src="icon/flags/US.png" alt="US" width="64" height="64"> | <img src="icon/groups/Planet.png" alt="Planet" width="64" height="64"> |
 
-- 格式：PNG
-- 尺寸：144 × 144
-- 分类：Apps / Flags / Groups
-- 支持通过 GitHub Raw URL 直接引用
+`PNG` · `144 × 144 px` · `GitHub Raw` · [图标使用说明](icon/README.md)
 
-**[在线浏览和搜索图标](https://jennieveloramae.github.io/NetKit/)** · [图标使用说明](icon/README.md)
-
-### 图标引用示例
+<details>
+<summary>Raw URL 与 Mihomo 配置示例</summary>
 
 ```text
 https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/apps/Spotify.png
@@ -43,6 +30,17 @@ https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/apps/Spotify.
 ```yaml
 icon: https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/groups/Planet.png
 ```
+
+</details>
+
+## Features · 项目内容
+
+| 分类 | 说明 |
+| --- | --- |
+| **Icons** | 统一风格的应用、地区及策略组图标 |
+| **Configs** | 自用网络配置与参考示例（计划补充） |
+| **Rules** | 自用多客户端兼容的网络分流规则（计划补充） |
+| **Scripts & Modules** | 实用脚本及模块（计划补充） |
 
 ## Usage · 使用说明
 
