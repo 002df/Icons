@@ -9,6 +9,34 @@ const manualUrl = document.querySelector('#manual-url');
 let icons = [];
 let category = 'all';
 
+function setupTheme() {
+  const toggle = document.querySelector('#theme-toggle');
+  if (!toggle) return;
+  const symbol = toggle.querySelector('.theme-symbol');
+  const label = toggle.querySelector('.theme-label');
+  const root = document.documentElement;
+
+  function updateThemeToggle() {
+    const isLight = root.dataset.theme === 'light';
+    symbol.textContent = isLight ? '☾' : '☀︎';
+    label.textContent = isLight ? 'Dark' : 'Light';
+    toggle.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} mode`);
+  }
+
+  updateThemeToggle();
+  toggle.hidden = false;
+  toggle.addEventListener('click', () => {
+    const theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+    root.dataset.theme = theme;
+    updateThemeToggle();
+    try {
+      localStorage.setItem('netkit-theme', theme);
+    } catch {
+      // The theme still works for this page when storage is unavailable.
+    }
+  });
+}
+
 function copyWithSelection(url) {
   const previouslyFocused = document.activeElement;
   const field = document.createElement('textarea');
@@ -137,4 +165,5 @@ async function loadIcons() {
   }
 }
 
+setupTheme();
 loadIcons();

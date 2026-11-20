@@ -3,11 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark light">
   <meta name="description" content="Browse NetKit PNG icons for apps, regions, and proxy groups, and copy their GitHub Raw URLs.">
   <title>NetKit Icons</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js" defer></script>
+  <script>
+    try {
+      if (localStorage.getItem('netkit-theme') === 'light') {
+        document.documentElement.dataset.theme = 'light';
+      }
+    } catch {
+      // Storage can be unavailable in some browsers.
+    }
+  </script>
+  <link rel="stylesheet" href="./style.css?v=2">
+  <script src="./app.js?v=2" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -16,7 +25,13 @@
         <span class="brand-mark" aria-hidden="true"></span>
         NetKit
       </a>
-      <a class="repository" href="https://github.com/jennieveloramae/NetKit">GitHub</a>
+      <div class="header-actions">
+        <button type="button" id="theme-toggle" class="theme-toggle" hidden>
+          <span class="theme-symbol" aria-hidden="true"></span>
+          <span class="theme-label"></span>
+        </button>
+        <a class="repository" href="https://github.com/jennieveloramae/NetKit">GitHub</a>
+      </div>
     </div>
   </header>
 
