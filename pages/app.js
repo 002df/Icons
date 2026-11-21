@@ -166,9 +166,7 @@ async function loadIcons() {
 }
 
 function setupIconSubscription() {
-  const link = document.querySelector('#icon-set-url');
-  if (!link) return;
-  const url = link.href;
+  const url = new URL('./surge-icons.json', document.baseURI).href;
   const button = document.querySelector('#copy-icon-set');
   const label = button.textContent;
   button.addEventListener('click', () => copyUrl(url, button, 'Copied icon set URL.', label));
