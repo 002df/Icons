@@ -79,11 +79,11 @@ async function copyUrl(url, button, announcement, label = 'Copy URL') {
   }
 
   copyStatus.textContent = announcement;
-  button.textContent = 'Copied!';
+  if (label !== null) button.textContent = 'Copied!';
   button.setAttribute('data-copied', '');
   clearTimeout(button.feedbackTimer);
   button.feedbackTimer = setTimeout(() => {
-    button.textContent = label;
+    if (label !== null) button.textContent = label;
     button.removeAttribute('data-copied');
   }, 1600);
 }
@@ -168,8 +168,7 @@ async function loadIcons() {
 function setupIconSubscription() {
   const url = new URL('./surge-icons.json', document.baseURI).href;
   const button = document.querySelector('#copy-icon-set');
-  const label = button.textContent;
-  button.addEventListener('click', () => copyUrl(url, button, 'Copied icon set URL.', label));
+  button.addEventListener('click', () => copyUrl(url, button, 'Copied shared icon set URL for Surge, Egern, and FlClash.', null));
   button.hidden = false;
 
   const encodedUrl = encodeURIComponent(url);
@@ -178,11 +177,10 @@ function setupIconSubscription() {
     quantumult: `quantumult-x:///ui?module=gallery&type=icon&action=add&content=${encodeURIComponent(JSON.stringify([url]))}`,
     stash: `stash://install-icon-set?url=${encodedUrl}`,
   };
-  const appLinks = document.querySelector('#icon-set-imports');
-  for (const appLink of appLinks.querySelectorAll('[data-icon-app]')) {
+  for (const appLink of document.querySelectorAll('[data-icon-app]')) {
     appLink.href = imports[appLink.dataset.iconApp];
+    appLink.hidden = false;
   }
-  appLinks.hidden = false;
 }
 
 setupTheme();

@@ -15,8 +15,8 @@
       // Storage can be unavailable in some browsers.
     }
   </script>
-  <link rel="stylesheet" href="./style.css?v=6">
-  <script src="./app.js?v=5" defer></script>
+  <link rel="stylesheet" href="./style.css?v=7">
+  <script src="./app.js?v=6" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -48,20 +48,19 @@
         <span class="search-mark" aria-hidden="true"></span>
         <input id="search" type="search" placeholder="Search icons…" autocomplete="off" spellcheck="false">
       </label>
-      <details id="icon-subscription" class="icon-subscription">
-        <summary>Icon subscription</summary>
-        <div class="subscription-body">
-          <div class="subscription-actions">
-            <button type="button" id="copy-icon-set" class="copy" aria-label="Copy icon set URL" hidden>Copy URL</button>
-          </div>
-          <nav id="icon-set-imports" class="subscription-actions app-imports" aria-label="Import icon set into an app" hidden>
-            <a data-icon-app="loon">Loon</a>
-            <a data-icon-app="quantumult">Quantumult X</a>
-            <a data-icon-app="stash">Stash</a>
-          </nav>
-          <p class="subscription-hint">For Surge, Egern, FlClash, and Bettbox, paste the URL in the app’s icon set settings.</p>
+      <section id="icon-subscription" class="icon-subscription" aria-labelledby="icon-subscription-title">
+        <h2 id="icon-subscription-title">Icon subscription</h2>
+        <div class="subscription-actions">
+          <button type="button" id="copy-icon-set" class="subscription-control" title="Copy shared icon set URL for Surge, Egern, and FlClash" aria-label="Copy shared icon set URL for Surge, Egern, and FlClash" hidden>
+            <img src="./icon/apps/Surge.png" alt="" width="24" height="24">
+            <img src="./icon/apps/Egern.png" alt="" width="24" height="24">
+            <img src="./icon/apps/FlClash.png" alt="" width="24" height="24">
+          </button>
+          <a class="subscription-control" data-icon-app="quantumult" title="Import icon set into Quantumult X" aria-label="Import icon set into Quantumult X" hidden><img src="./icon/apps/QuantumultX.png" alt="" width="24" height="24"></a>
+          <a class="subscription-control" data-icon-app="loon" title="Import icon set into Loon" aria-label="Import icon set into Loon" hidden><img src="./icon/apps/Loon.png" alt="" width="24" height="24"></a>
+          <a class="subscription-control" data-icon-app="stash" title="Import icon set into Stash" aria-label="Import icon set into Stash" hidden><img src="./icon/apps/Stash.png" alt="" width="24" height="24"></a>
         </div>
-      </details>
+      </section>
     </section>
 
     <div class="gallery-controls">

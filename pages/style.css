@@ -244,59 +244,27 @@ h1 {
 }
 .copy:hover, dialog button:hover { border-color: var(--accent); }
 .copy[data-copied] { background: var(--success-soft); color: var(--success); }
-.icon-subscription {
-  max-width: 32rem;
-  margin-top: .65rem;
-  border: 1px solid var(--border);
-  border-radius: .7rem;
-  background: var(--surface);
-  font-size: .875rem;
-}
-.icon-subscription summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: .65rem;
-  min-height: 2.75rem;
-  padding: .55rem .8rem;
-  border-radius: inherit;
-  cursor: pointer;
-  list-style: none;
-  font-weight: 650;
-}
-.icon-subscription summary::-webkit-details-marker { display: none; }
-.icon-subscription summary::after {
-  content: "";
-  width: .42rem;
-  height: .42rem;
-  margin-inline-end: .15rem;
-  border: solid var(--muted);
-  border-width: 0 1.5px 1.5px 0;
-  transform: translateY(-.1rem) rotate(45deg);
-}
-.icon-subscription[open] summary::after { transform: translateY(.1rem) rotate(225deg); }
-.subscription-body { padding: .65rem .8rem .8rem; border-top: 1px solid var(--border); }
-.subscription-actions:not([hidden]) {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .25rem .75rem;
-}
-.subscription-actions .copy { width: auto; max-width: 100%; padding-inline: .75rem; }
-.subscription-actions a { color: var(--accent); text-underline-offset: .14em; }
-.app-imports:not([hidden]) { margin-top: .5rem; gap: .35rem; }
-.app-imports a {
+.icon-subscription { margin-top: .75rem; }
+.icon-subscription h2 { margin: 0 0 .4rem; font-size: .875rem; font-weight: 650; }
+.subscription-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.subscription-control:not([hidden]) {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
-  padding: .3rem .65rem;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: .3rem .5rem;
+  gap: .25rem;
   border: 1px solid var(--border);
   border-radius: .55rem;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
   text-decoration: none;
-  font-weight: 650;
 }
-.app-imports a:hover { border-color: var(--accent); background: var(--accent-soft); }
-.intro .subscription-hint { margin-top: .55rem; }
+.subscription-control img { width: 24px; height: 24px; object-fit: contain; }
+.subscription-control:hover { border-color: var(--accent); background: var(--accent-soft); }
+.subscription-control[data-copied] { background: var(--success-soft); color: var(--success); }
 
 dialog {
   width: min(100% - 2rem, 28rem);
