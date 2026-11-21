@@ -15,8 +15,8 @@
       // Storage can be unavailable in some browsers.
     }
   </script>
-  <link rel="stylesheet" href="./style.css?v=4">
-  <script src="./app.js?v=3" defer></script>
+  <link rel="stylesheet" href="./style.css?v=5">
+  <script src="./app.js?v=4" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -48,7 +48,19 @@
         <span class="search-mark" aria-hidden="true"></span>
         <input id="search" type="search" placeholder="Search icons…" autocomplete="off" spellcheck="false">
       </label>
-      <button type="button" id="copy-surge" class="copy surge-subscription" hidden>Copy Surge Subscription URL</button>
+      <div id="icon-subscription" class="icon-subscription">
+        <div class="subscription-actions">
+          <button type="button" id="copy-icon-set" class="copy" hidden>Copy Icon Set URL</button>
+          <a href="./surge-icons.json" id="icon-set-url">Icon Set JSON</a>
+        </div>
+        <nav id="icon-set-imports" class="subscription-actions app-imports" aria-label="Import icon set into an app" hidden>
+          <span>Open in</span>
+          <a data-icon-app="loon">Loon</a>
+          <a data-icon-app="quantumult">Quantumult X</a>
+          <a data-icon-app="stash">Stash</a>
+        </nav>
+        <p class="subscription-hint">For Surge, Egern, FlClash, and Bettbox, paste the URL into the app’s icon set settings.</p>
+      </div>
     </section>
 
     <div class="gallery-controls">

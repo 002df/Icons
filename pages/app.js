@@ -165,12 +165,28 @@ async function loadIcons() {
   }
 }
 
-setupTheme();
-const surgeButton = document.querySelector('#copy-surge');
-if (surgeButton) {
-  const url = new URL('./surge-icons.json', document.baseURI).href;
-  const label = surgeButton.textContent;
-  surgeButton.addEventListener('click', () => copyUrl(url, surgeButton, 'Copied Surge subscription URL.', label));
-  surgeButton.hidden = false;
+function setupIconSubscription() {
+  const link = document.querySelector('#icon-set-url');
+  if (!link) return;
+  const url = link.href;
+  const button = document.querySelector('#copy-icon-set');
+  const label = button.textContent;
+  button.addEventListener('click', () => copyUrl(url, button, 'Copied icon set URL.', label));
+  button.hidden = false;
+
+  const encodedUrl = encodeURIComponent(url);
+  const imports = {
+    loon: `loon://import?iconset=${encodedUrl}`,
+    quantumult: `quantumult-x:///ui?module=gallery&type=icon&action=add&content=${encodeURIComponent(JSON.stringify([url]))}`,
+    stash: `stash://install-icon-set?url=${encodedUrl}`,
+  };
+  const appLinks = document.querySelector('#icon-set-imports');
+  for (const appLink of appLinks.querySelectorAll('[data-icon-app]')) {
+    appLink.href = imports[appLink.dataset.iconApp];
+  }
+  appLinks.hidden = false;
 }
+
+setupTheme();
+setupIconSubscription();
 loadIcons();

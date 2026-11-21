@@ -18,7 +18,7 @@
 
 `PNG` · `144 × 144 px` · `GitHub Raw` · [图标使用说明](icon/README.md)
 
-**Surge** · 复制 [图标订阅链接](https://jennieveloramae.github.io/NetKit/surge-icons.json)，在策略组图标选择界面添加为外部图标集。
+**图标集订阅** · 在 Surge、Egern、FlClash 或 Bettbox 的图标集设置中粘贴[通用订阅地址](https://jennieveloramae.github.io/NetKit/surge-icons.json)。Loon、Quantumult X 和 Stash 可从[图标站](https://jennieveloramae.github.io/NetKit/#icon-subscription)打开客户端导入同一份清单。
 
 <details>
 <summary>Raw URL 与 Mihomo 配置示例</summary>

@@ -244,7 +244,17 @@ h1 {
 }
 .copy:hover, dialog button:hover { border-color: var(--accent); }
 .copy[data-copied] { background: var(--success-soft); color: var(--success); }
-.surge-subscription { width: auto; max-width: 100%; margin-top: .75rem; padding-inline: .75rem; }
+.icon-subscription { margin-top: .75rem; font-size: .875rem; }
+.subscription-actions:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem .75rem;
+}
+.subscription-actions .copy { width: auto; max-width: 100%; padding-inline: .75rem; }
+.subscription-actions a { color: var(--accent); text-underline-offset: .14em; }
+.app-imports { margin-top: .45rem; color: var(--muted); }
+.intro .subscription-hint { margin-top: .35rem; }
 
 dialog {
   width: min(100% - 2rem, 28rem);
