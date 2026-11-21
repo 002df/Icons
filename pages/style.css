@@ -264,7 +264,9 @@ h1 {
 }
 .subscription-control img { width: 24px; height: 24px; object-fit: contain; }
 .subscription-control:hover { border-color: var(--accent); background: var(--accent-soft); }
-.subscription-control[data-copied] { background: var(--success-soft); color: var(--success); }
+#copy-icon-set { gap: .6rem; }
+#copy-icon-set .subscription-icon-egern { width: 32px; height: 32px; }
+.intro #subscription-copy-status { min-height: 1.25em; margin: .25rem 0 0; font-size: .875rem; color: var(--muted); }
 
 dialog {
   width: min(100% - 2rem, 28rem);

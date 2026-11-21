@@ -15,8 +15,8 @@
       // Storage can be unavailable in some browsers.
     }
   </script>
-  <link rel="stylesheet" href="./style.css?v=7">
-  <script src="./app.js?v=6" defer></script>
+  <link rel="stylesheet" href="./style.css?v=8">
+  <script src="./app.js?v=7" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -53,13 +53,14 @@
         <div class="subscription-actions">
           <button type="button" id="copy-icon-set" class="subscription-control" title="Copy shared icon set URL for Surge, Egern, and FlClash" aria-label="Copy shared icon set URL for Surge, Egern, and FlClash" hidden>
             <img src="./icon/apps/Surge.png" alt="" width="24" height="24">
-            <img src="./icon/apps/Egern.png" alt="" width="24" height="24">
+            <img class="subscription-icon-egern" src="./icon/apps/Egern.png" alt="" width="32" height="32">
             <img src="./icon/apps/FlClash.png" alt="" width="24" height="24">
           </button>
           <a class="subscription-control" data-icon-app="quantumult" title="Import icon set into Quantumult X" aria-label="Import icon set into Quantumult X" hidden><img src="./icon/apps/QuantumultX.png" alt="" width="24" height="24"></a>
           <a class="subscription-control" data-icon-app="loon" title="Import icon set into Loon" aria-label="Import icon set into Loon" hidden><img src="./icon/apps/Loon.png" alt="" width="24" height="24"></a>
           <a class="subscription-control" data-icon-app="stash" title="Import icon set into Stash" aria-label="Import icon set into Stash" hidden><img src="./icon/apps/Stash.png" alt="" width="24" height="24"></a>
         </div>
+        <p id="subscription-copy-status" role="status"></p>
       </section>
     </section>
 

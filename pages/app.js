@@ -57,7 +57,7 @@ function copyWithSelection(url) {
   }
 }
 
-async function copyUrl(url, button, announcement, label = 'Copy URL') {
+async function copyUrl(url, button, announcement, label = 'Copy URL', status = copyStatus) {
   let copied = false;
   if (navigator.clipboard?.writeText) {
     try {
@@ -78,12 +78,13 @@ async function copyUrl(url, button, announcement, label = 'Copy URL') {
     return;
   }
 
-  copyStatus.textContent = announcement;
-  if (label !== null) button.textContent = 'Copied!';
+  status.textContent = announcement;
+  if (label === null) return true;
+  button.textContent = 'Copied!';
   button.setAttribute('data-copied', '');
   clearTimeout(button.feedbackTimer);
   button.feedbackTimer = setTimeout(() => {
-    if (label !== null) button.textContent = label;
+    button.textContent = label;
     button.removeAttribute('data-copied');
   }, 1600);
 }
@@ -168,7 +169,16 @@ async function loadIcons() {
 function setupIconSubscription() {
   const url = new URL('./surge-icons.json', document.baseURI).href;
   const button = document.querySelector('#copy-icon-set');
-  button.addEventListener('click', () => copyUrl(url, button, 'Copied shared icon set URL for Surge, Egern, and FlClash.', null));
+  const status = document.querySelector('#subscription-copy-status');
+  let clearStatus;
+  button.addEventListener('click', async () => {
+    clearTimeout(clearStatus);
+    status.textContent = '';
+    if (await copyUrl(url, button, 'Subscription URL copied', null, status)) {
+      clearTimeout(clearStatus);
+      clearStatus = setTimeout(() => { status.textContent = ''; }, 2000);
+    }
+  });
   button.hidden = false;
 
   const encodedUrl = encodeURIComponent(url);
