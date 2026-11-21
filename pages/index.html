@@ -15,8 +15,8 @@
       // Storage can be unavailable in some browsers.
     }
   </script>
-  <link rel="stylesheet" href="./style.css?v=3">
-  <script src="./app.js?v=2" defer></script>
+  <link rel="stylesheet" href="./style.css?v=4">
+  <script src="./app.js?v=3" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -48,6 +48,7 @@
         <span class="search-mark" aria-hidden="true"></span>
         <input id="search" type="search" placeholder="Search icons…" autocomplete="off" spellcheck="false">
       </label>
+      <button type="button" id="copy-surge" class="copy surge-subscription" hidden>Copy Surge Subscription URL</button>
     </section>
 
     <div class="gallery-controls">
@@ -67,9 +68,9 @@
   <p id="copy-status" class="visually-hidden" role="status"></p>
   <dialog id="copy-dialog" aria-labelledby="copy-title">
     <form method="dialog">
-      <h2 id="copy-title">Copy Raw URL</h2>
+      <h2 id="copy-title">Copy URL</h2>
       <p>Select and copy the link below.</p>
-      <input id="manual-url" type="text" aria-label="Raw URL" readonly autofocus>
+      <input id="manual-url" type="text" aria-label="URL to copy" readonly autofocus>
       <button type="submit">Done</button>
     </form>
   </dialog>

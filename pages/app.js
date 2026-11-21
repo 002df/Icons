@@ -57,33 +57,33 @@ function copyWithSelection(url) {
   }
 }
 
-async function copyUrl(icon, button) {
+async function copyUrl(url, button, announcement, label = 'Copy URL') {
   let copied = false;
   if (navigator.clipboard?.writeText) {
     try {
-      await navigator.clipboard.writeText(icon.rawUrl);
+      await navigator.clipboard.writeText(url);
       copied = true;
     } catch {
-      copied = copyWithSelection(icon.rawUrl);
+      copied = copyWithSelection(url);
     }
   } else {
-    copied = copyWithSelection(icon.rawUrl);
+    copied = copyWithSelection(url);
   }
 
   if (!copied) {
-    manualUrl.value = icon.rawUrl;
+    manualUrl.value = url;
     if (!copyDialog.open) copyDialog.showModal();
     manualUrl.select();
     manualUrl.setSelectionRange(0, manualUrl.value.length);
     return;
   }
 
-  copyStatus.textContent = `Copied URL for ${icon.name}.`;
+  copyStatus.textContent = announcement;
   button.textContent = 'Copied!';
   button.setAttribute('data-copied', '');
   clearTimeout(button.feedbackTimer);
   button.feedbackTimer = setTimeout(() => {
-    button.textContent = 'Copy URL';
+    button.textContent = label;
     button.removeAttribute('data-copied');
   }, 1600);
 }
@@ -119,7 +119,7 @@ function createCard(icon) {
   button.type = 'button';
   button.textContent = 'Copy URL';
   button.setAttribute('aria-label', `Copy URL for ${icon.name} (${label.textContent})`);
-  button.addEventListener('click', () => copyUrl(icon, button));
+  button.addEventListener('click', () => copyUrl(icon.rawUrl, button, `Copied URL for ${icon.name}.`));
 
   card.append(link, name, label, button);
   return card;
@@ -166,4 +166,11 @@ async function loadIcons() {
 }
 
 setupTheme();
+const surgeButton = document.querySelector('#copy-surge');
+if (surgeButton) {
+  const url = new URL('./surge-icons.json', document.baseURI).href;
+  const label = surgeButton.textContent;
+  surgeButton.addEventListener('click', () => copyUrl(url, surgeButton, 'Copied Surge subscription URL.', label));
+  surgeButton.hidden = false;
+}
 loadIcons();

@@ -244,6 +244,7 @@ h1 {
 }
 .copy:hover, dialog button:hover { border-color: var(--accent); }
 .copy[data-copied] { background: var(--success-soft); color: var(--success); }
+.surge-subscription { width: auto; max-width: 100%; margin-top: .75rem; padding-inline: .75rem; }
 
 dialog {
   width: min(100% - 2rem, 28rem);

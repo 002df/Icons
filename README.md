@@ -18,6 +18,8 @@
 
 `PNG` · `144 × 144 px` · `GitHub Raw` · [图标使用说明](icon/README.md)
 
+**Surge** · 复制 [图标订阅链接](https://jennieveloramae.github.io/NetKit/surge-icons.json)，在策略组图标选择界面添加为外部图标集。
+
 <details>
 <summary>Raw URL 与 Mihomo 配置示例</summary>
 

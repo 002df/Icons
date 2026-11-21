@@ -46,6 +46,13 @@ def build(output):
     (output / "icons.json").write_text(
         json.dumps(icons, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    surge_icons = {
+        "name": "NetKit Icons",
+        "icons": [{"name": icon["name"], "url": icon["rawUrl"]} for icon in icons],
+    }
+    (output / "surge-icons.json").write_text(
+        json.dumps(surge_icons, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     print(f"Built {len(icons)} icons in {output}")
 
 
