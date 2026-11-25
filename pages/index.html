@@ -24,7 +24,7 @@ a{color:inherit}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 img{display:block;object-fit:contain}
 h1,h2,p{margin:0}
-.wrap{width:min(974px,calc(100% - 48px));margin-inline:auto}
+.wrap{width:calc(100% - clamp(48px,4vw,80px));margin-inline:auto}
 .bar{background:var(--header);border-bottom:1px solid var(--line)}
 .bar-inner{display:flex;align-items:center;gap:26px;min-height:64px}
 .brand{display:inline-flex;align-items:center;gap:9px;font-weight:800;text-decoration:none;white-space:nowrap}
