@@ -27,8 +27,6 @@ def build(output):
         for source in sorted(source_directory.iterdir(), key=lambda path: (path.name.casefold(), path.name)):
             if not source.is_file() or source.suffix.lower() != ".png":
                 continue
-            if category == "flags" and source.name.casefold() == "tw.png":
-                continue
 
             destination = output / relative_directory / source.name
             destination.parent.mkdir(parents=True, exist_ok=True)
