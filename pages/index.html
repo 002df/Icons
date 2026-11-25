@@ -32,7 +32,7 @@ h1,h2,p{margin:0}
 .topnav{display:flex;gap:19px;align-items:center;font-size:14px}
 .topnav a{text-decoration:none;color:var(--muted)}
 .topnav .current{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px;text-underline-offset:8px}
-.hero{padding:59px 0 35px}
+.hero{padding:59px 0 0}
 .eyebrow{display:flex;align-items:center;gap:8px;color:var(--red);letter-spacing:.15em;font-size:11px;font-weight:800;text-transform:uppercase}
 .eyebrow .dot{width:9px;height:9px}
 .eyebrow .dot:last-of-type{margin-right:5px}
@@ -43,7 +43,7 @@ h1{font-size:clamp(42px,6.1vw,67px);line-height:1.07;letter-spacing:-.056em;marg
 .intro{max-width:550px;color:var(--muted);font-size:17px}
 .hero-meta{display:flex;align-items:center;gap:12px 19px;flex-wrap:wrap;margin-top:21px;font-size:13px}
 .accent{color:var(--red);text-underline-offset:3px;font-weight:650}
-.sub{background:var(--surface);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow);padding:22px 27px 24px}
+.sub{margin-top:22px}
 .sub-head{display:flex;align-items:baseline;gap:2px 12px;flex-wrap:wrap;margin-bottom:14px}
 .sub-head h2{font-size:17px;letter-spacing:-.02em}
 .sub-head p{color:var(--muted);font-size:13px}
@@ -71,7 +71,8 @@ h1{font-size:clamp(42px,6.1vw,67px);line-height:1.07;letter-spacing:-.056em;marg
 .card .name{max-width:100%;font-size:11px;line-height:1.4;font-weight:500;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .gallery-hint{color:var(--muted);font-size:12px;margin:-4px 0 12px}
 .empty{grid-column:1/-1;padding:22px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
-.footer{display:flex;justify-content:space-between;gap:12px;margin:40px auto 24px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:12px}
+.footer{display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin:40px auto 24px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:12px}
+.footer .rights{grid-column:1/-1}
 .feedback{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);border-radius:99px;background:var(--selected);color:var(--on-selected);padding:6px 16px;font-size:13px;box-shadow:var(--shadow);z-index:2;white-space:nowrap}
 .feedback:empty{display:none}
 dialog{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:20px;max-width:min(420px,calc(100% - 32px));width:100%}
@@ -83,9 +84,9 @@ dialog::backdrop{background:#10191b80}
 @media(max-width:620px){.wrap{width:calc(100% - 32px)}
 .bar-inner{gap:10px;min-height:56px}
 .topnav a.current{display:none}
-.hero{padding:36px 0 25px}
+.hero{padding:36px 0 0}
 .intro{font-size:15px}
-.sub{padding:17px 15px}
+.sub{margin-top:18px}
 .gallery-section{margin-top:26px}
 .category-list{gap:5px}
 .category-list button{gap:4px;padding:5px 8px;font-size:11px}
@@ -131,8 +132,7 @@ dialog::backdrop{background:#10191b80}
 <div class="eyebrow"><i class="dot" aria-hidden="true"></i><i class="dot teal" aria-hidden="true"></i><i class="dot yellow" aria-hidden="true"></i>The icon collection</div>
 <h1 id="title">Jennie Icons</h1><p class="intro">A collection of transparent PNG icons for apps, proxy groups, and regions.</p>
 <div class="hero-meta"><a class="accent" href="https://github.com/jennieveloramae/NetKit" target="_blank" rel="noopener">Love NetKit? Give it a star on GitHub ⭐ ↗</a></div>
-</section>
-<section class="sub" aria-labelledby="sub-title"><div class="sub-head"><h2 id="sub-title">Icon subscription</h2><p>Click an icon to import or copy the link.</p></div><div class="sub-row">
+<section class="sub" id="icon-subscription" aria-labelledby="sub-title"><div class="sub-head"><h2 id="sub-title">Icon subscription</h2><p>Click an icon to import or copy the link.</p></div><div class="sub-row">
           <a class="subscription-control" data-icon-app="quantumult" title="One-click import" aria-label="Import icon set into Quantumult X" hidden><img src="./icon/apps/QuantumultX.png" alt="" width="24" height="24"></a>
           <a class="subscription-control" data-icon-app="loon" title="One-click import" aria-label="Import icon set into Loon" hidden><img src="./icon/apps/Loon.png" alt="" width="24" height="24"></a>
           <a class="subscription-control" data-icon-app="stash" title="One-click import" aria-label="Import icon set into Stash" hidden><img src="./icon/apps/Stash.png" alt="" width="24" height="24"></a>
@@ -147,6 +147,7 @@ dialog::backdrop{background:#10191b80}
           </a>
 
 </div><p id="subscription-copy-status" class="feedback" role="status"></p></section>
+</section>
 <section id="gallery" tabindex="-1" class="gallery-section" aria-labelledby="section-name"><h2 class="sr" id="section-name">All icons</h2><div class="gallery-top"><div class="category-list" role="group" aria-label="Icon categories">
         <button type="button" data-category="all" aria-pressed="true">All <span></span></button>
         <button type="button" data-category="apps" aria-pressed="false">Apps <span></span></button>
@@ -154,7 +155,7 @@ dialog::backdrop{background:#10191b80}
         <button type="button" data-category="flags" aria-pressed="false">Regions <span></span></button>
 
 </div><label class="search"><span class="sr">Search icons</span><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="6.7" cy="6.7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input type="search" id="search" placeholder="Search icons…" autocomplete="off"></label></div><p class="gallery-hint">Click an icon to copy its URL.</p><p id="results" role="status"></p><ul class="grid" id="icon-grid" role="list"></ul></section>
-<footer class="footer"><span>NetKit</span><a href="#top">Back to top ↑</a></footer><noscript>Enable JavaScript to browse and search the icon collection. <span lang="zh-Hans">请启用 JavaScript 以浏览和搜索图标。</span></noscript></main>
+<footer class="footer"><span>NetKit</span><a class="back-top" href="#top">Back to top ↑</a><p class="rights"><span>Icon copyrights belong to their respective rights holders. To report infringement, please </span><a href="https://github.com/jennieveloramae/NetKit/issues">open an issue</a><span>.</span></p></footer><noscript>Enable JavaScript to browse and search the icon collection. <span lang="zh-Hans">请启用 JavaScript 以浏览和搜索图标。</span></noscript></main>
 <p id="copy-status" class="feedback" role="status"></p>
 <dialog id="copy-dialog" aria-labelledby="copy-title"><form method="dialog"><h2 id="copy-title">Copy URL</h2><p>Select and copy the link below.</p><input id="manual-url" aria-label="URL to copy" readonly autofocus><button>Done</button></form></dialog>
 <script>
@@ -215,7 +216,10 @@ function setupLanguage() {
   set('.search .sr', '搜索图标');
   attr('#search', 'placeholder', '搜索图标…');
   set('.gallery-hint', '点击图标即可复制链接。');
-  set('.footer a', '返回顶部 ↑');
+  set('.footer .back-top', '返回顶部 ↑');
+  set('.footer .rights span:first-child', '图标版权归各自权利人所有。如有侵权，请');
+  set('.footer .rights a', '提交 Issue');
+  set('.footer .rights span:last-child', '。');
   set('#copy-title', '复制链接');
   set('#copy-dialog p', '请选择并复制下方的链接。');
   attr('#manual-url', 'aria-label', '待复制的链接');
