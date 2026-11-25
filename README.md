@@ -4,7 +4,7 @@
 
 ## Jennie Icons
 
-**[打开中文图标站](https://jennieveloramae.github.io/NetKit/?lang=zh)**
+**[打开中文图标站](https://icons.jennie.win/?lang=zh)**
 
 按分类浏览或按名称搜索。点击图标即可复制 GitHub Raw 链接。
 
@@ -16,8 +16,8 @@
 
 ## 使用指南
 
-- **一键导入**：在[图标站](https://jennieveloramae.github.io/NetKit/?lang=zh#icon-subscription)点击 Quantumult X、Loon 或 Stash 的图标。
-- **订阅图标集**：点击 Surge / Egern / FlClash 的组合按钮复制[订阅链接](https://jennieveloramae.github.io/NetKit/surge-icons.json)，再粘贴到客户端的图标集设置中。
+- **一键导入**：在[图标站](https://icons.jennie.win/?lang=zh#icon-subscription)点击 Quantumult X、Loon 或 Stash 的图标。
+- **订阅图标集**：点击 Surge / Egern / FlClash 的组合按钮复制[订阅链接](https://icons.jennie.win/surge-icons.json)，再粘贴到客户端的图标集设置中。
 - **引用单个图标**：从图标站复制 Raw 链接，用于 Mihomo 等支持图标 URL 的配置或界面。路径区分大小写。
 
 Mihomo 策略组示例：
@@ -27,8 +27,6 @@ icon: https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/groups/
 ```
 
 [更多图标使用说明](icon/README.md)
-
-另见：[Apple Radio 分流规则](rules/)
 
 ## 许可协议
 

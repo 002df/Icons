@@ -14,8 +14,7 @@ RAW_ROOT = "https://raw.githubusercontent.com/jennieveloramae/NetKit/main/"
 
 def build(output):
     output.mkdir(parents=True)
-    for filename in ("index.html", "style.css", "app.js"):
-        shutil.copyfile(ROOT / "pages" / filename, output / filename)
+    shutil.copyfile(ROOT / "pages" / "index.html", output / "index.html")
 
     icons = []
     for category in CATEGORIES:
