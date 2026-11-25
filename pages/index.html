@@ -319,7 +319,7 @@ function createCard(icon) {
   button.className = 'icon-copy';
   button.title = t('Copy URL for ' + icon.name, '复制 ' + icon.name + ' 的链接');
   button.setAttribute('aria-label', button.title + ' (' + categories[icon.category] + ')');
-  button.addEventListener('click', () => copyUrl(new URL(icon.image, 'https://icons.jennie.win/').href, button, t('Copied URL for ' + icon.name + '.', '已复制 ' + icon.name + ' 的链接。')));
+  button.addEventListener('click', () => copyUrl(icon.rawUrl, button, t('Copied URL for ' + icon.name + '.', '已复制 ' + icon.name + ' 的链接。')));
 
   const image = document.createElement('img');
   image.src = icon.image;
