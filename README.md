@@ -33,12 +33,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/groups/Planet.png
 ```
 
-## Adding icons and deploying
-
-Add, replace, rename, or remove PNGs in the appropriate category directory, then commit and push to `main`. GitHub Actions regenerates the manifests and deploys the gallery.
-
-For initial setup, choose **GitHub Actions** under **Settings → Pages → Build and deployment → Source**. To deploy manually or retry, run **Deploy NetKit to GitHub Pages** from **Actions**.
-
 ## License
 
 This project uses the [MIT License](LICENSE). Third-party names, logos, trademarks, and related artwork belong to their respective rights holders.

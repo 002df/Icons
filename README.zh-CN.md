@@ -33,12 +33,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/groups/Planet.png
 ```
 
-## 更新图标与部署
-
-在对应分类目录中添加、替换、重命名或删除 PNG，再将变更提交并推送到 `main`。GitHub Actions 会重新生成清单并部署图标站。
-
-首次部署时，在仓库的 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。手动部署或重试时，可在 **Actions** 中运行 **Deploy NetKit to GitHub Pages**。
-
 ## 许可协议
 
 本项目采用 [MIT 许可证](LICENSE)。第三方应用名称、品牌标识及相关素材仍归各自权利人所有。
