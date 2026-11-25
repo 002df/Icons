@@ -111,6 +111,18 @@ dialog::backdrop{background:#10191b80}
   .category-list button span { font-size: 10px; }
   .gallery-top .search { width: auto; flex: 1 1 130px; }
 }
+.bar-inner { flex-wrap: wrap; }
+.header-options { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-inline-start: auto; }
+.header-options .theme { margin-left: 0; }
+.language { display: flex; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); }
+.language a { color: var(--muted); border-radius: 99px; padding: 4px 9px; font-size: 13px; text-decoration: none; white-space: nowrap; }
+.language a:hover { color: var(--ink); }
+.language a[aria-current=page] { background: var(--selected); color: var(--on-selected); }
+@media (max-width: 440px) {
+  .bar-inner { gap: 6px 10px; padding-block: 8px; }
+  .header-options { justify-content: flex-end; }
+  .language a { padding-inline: 6px; }
+}
 </style>
 
 </head>
@@ -118,7 +130,8 @@ dialog::backdrop{background:#10191b80}
 <header class="bar" id="top"><div class="wrap bar-inner">
 <a class="brand" href="#top"><svg viewBox="0 0 26 28" fill="none" aria-hidden="true"><rect x="2" y="4" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><rect x="2" y="16" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="16" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="18.5" cy="8.5" r="4.5" fill="var(--red)"/></svg>NetKit</a>
 <nav class="topnav" aria-label="Main"><a class="current" href="#gallery">Icons</a><a href="https://github.com/jennieveloramae/NetKit" target="_blank" rel="noopener">GitHub ↗</a></nav>
-<div class="theme" hidden role="group" aria-label="Color theme"><button type="button" data-theme-switch="light" aria-pressed="true"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.7v2M10 16.3v2M1.7 10h2m12.6 0h2M4.1 4.1l1.4 1.4m9 9 1.4 1.4m0-11.8-1.4 1.4m-9 9-1.4 1.4"/></svg>Light</button><button type="button" data-theme-switch="dark" aria-pressed="false"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M16.9 12.6A7.2 7.2 0 0 1 7.4 3.1a7.3 7.3 0 1 0 9.5 9.5Z"/></svg>Dark</button></div></div></header>
+<div class="header-options"><nav class="language" aria-label="Language / 语言"><a data-lang="zh" href="?lang=zh" lang="zh-Hans" hreflang="zh-Hans">中文</a><a data-lang="en" href="./" lang="en" hreflang="en" aria-current="page">English</a></nav>
+<div class="theme" hidden role="group" aria-label="Color theme"><button type="button" data-theme-switch="light" aria-pressed="true"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="3.5"/><path d="M10 1.7v2M10 16.3v2M1.7 10h2m12.6 0h2M4.1 4.1l1.4 1.4m9 9 1.4 1.4m0-11.8-1.4 1.4m-9 9-1.4 1.4"/></svg>Light</button><button type="button" data-theme-switch="dark" aria-pressed="false"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M16.9 12.6A7.2 7.2 0 0 1 7.4 3.1a7.3 7.3 0 1 0 9.5 9.5Z"/></svg>Dark</button></div></div></div></header>
 <main class="wrap">
 <section class="hero" aria-labelledby="title">
 <div class="eyebrow"><i class="dot" aria-hidden="true"></i><i class="dot teal" aria-hidden="true"></i><i class="dot yellow" aria-hidden="true"></i>The icon collection</div>
@@ -147,11 +160,13 @@ dialog::backdrop{background:#10191b80}
         <button type="button" data-category="flags" aria-pressed="false">Regions <span></span></button>
 
 </div><label class="search"><span class="sr">Search icons</span><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="6.7" cy="6.7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input type="search" id="search" placeholder="Search icons…" autocomplete="off"></label></div><p class="gallery-hint">Click an icon to copy its URL.</p><p id="results" role="status"></p><ul class="grid" id="icon-grid" role="list"></ul></section>
-<footer class="footer"><span>NetKit</span><a href="#top">Back to top ↑</a></footer><noscript>Enable JavaScript to browse and search the icon collection.</noscript></main>
+<footer class="footer"><span>NetKit</span><a href="#top">Back to top ↑</a></footer><noscript>Enable JavaScript to browse and search the icon collection. <span lang="zh-Hans">请启用 JavaScript 以浏览和搜索图标。</span></noscript></main>
 <p id="copy-status" class="feedback" role="status"></p>
 <dialog id="copy-dialog" aria-labelledby="copy-title"><form method="dialog"><h2 id="copy-title">Copy URL</h2><p>Select and copy the link below.</p><input id="manual-url" aria-label="URL to copy" readonly autofocus><button>Done</button></form></dialog>
 <script>
-const categories = { apps: 'Apps', flags: 'Regions', groups: 'Proxy groups' };
+const isChinese = new URLSearchParams(location.search).get('lang') === 'zh';
+const t = (en, zh) => isChinese ? zh : en;
+const categories = { apps: t('Apps', '应用'), flags: t('Regions', '地区'), groups: t('Proxy groups', '代理策略组') };
 const search = document.querySelector('#search');
 const filters = document.querySelectorAll('[data-category]');
 const results = document.querySelector('#results');
@@ -161,6 +176,55 @@ const copyDialog = document.querySelector('#copy-dialog');
 const manualUrl = document.querySelector('#manual-url');
 let icons = [];
 let category = 'all';
+
+function setupLanguage() {
+  const current = document.querySelector('[data-lang="' + (isChinese ? 'zh' : 'en') + '"]');
+  document.querySelector('[data-lang="en"]').removeAttribute('aria-current');
+  current.setAttribute('aria-current', 'page');
+  if (!isChinese) return;
+
+  document.documentElement.lang = 'zh-Hans';
+  document.title = 'Jennie Icons · 中文';
+  const set = (selector, value) => { document.querySelector(selector).textContent = value; };
+  const attr = (selector, key, value) => document.querySelector(selector).setAttribute(key, value);
+  const setLabel = (selector, text) => {
+    const node = document.querySelector(selector);
+    node.lastChild.nodeValue = text;
+  };
+  attr('.topnav', 'aria-label', '主导航');
+  set('.topnav .current', '图标');
+  attr('.theme', 'aria-label', '颜色主题');
+  setLabel('[data-theme-switch="light"]', '浅色');
+  setLabel('[data-theme-switch="dark"]', '深色');
+  setLabel('.eyebrow', '图标合集');
+  set('.intro', '应用、代理策略组和地区的透明 PNG 图标合集。');
+  set('.hero-meta a', '喜欢 NetKit？欢迎在 GitHub 上点个 ⭐ ↗');
+  set('#sub-title', '图标订阅');
+  set('.sub-head p', '点击图标即可导入或复制链接。');
+  const clientNames = { quantumult: 'Quantumult X', loon: 'Loon', stash: 'Stash' };
+  for (const link of document.querySelectorAll('[data-icon-app]')) {
+    link.title = '一键导入';
+    link.setAttribute('aria-label', '将图标集导入 ' + clientNames[link.dataset.iconApp]);
+  }
+  attr('#copy-icon-set', 'title', '复制图标集链接');
+  attr('#copy-icon-set', 'aria-label', '复制 Surge、Egern 和 FlClash 的图标集链接');
+  const customHint = '复制下方的单个图标链接，用于配置文件或兼容的客户端。';
+  attr('.sub-row a[href="#gallery"]', 'title', customHint);
+  attr('.sub-row a[href="#gallery"]', 'aria-label', 'Mihomo 和 sing-box：' + customHint);
+  set('#section-name', '全部图标');
+  attr('.category-list', 'aria-label', '图标分类');
+  for (const filter of filters) {
+    filter.firstChild.nodeValue = (categories[filter.dataset.category] || '全部') + ' ';
+  }
+  set('.search .sr', '搜索图标');
+  attr('#search', 'placeholder', '搜索图标…');
+  set('.gallery-hint', '点击图标即可复制链接。');
+  set('.footer a', '返回顶部 ↑');
+  set('#copy-title', '复制链接');
+  set('#copy-dialog p', '请选择并复制下方的链接。');
+  attr('#manual-url', 'aria-label', '待复制的链接');
+  set('#copy-dialog button', '完成');
+}
 
 function setupTheme() {
   const root = document.documentElement;
@@ -254,9 +318,9 @@ function createCard(icon) {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'icon-copy';
-  button.title = `Copy URL for ${icon.name}`;
-  button.setAttribute('aria-label', `Copy URL for ${icon.name} (${categories[icon.category]})`);
-  button.addEventListener('click', () => copyUrl(icon.rawUrl, button, `Copied URL for ${icon.name}.`));
+  button.title = t('Copy URL for ' + icon.name, '复制 ' + icon.name + ' 的链接');
+  button.setAttribute('aria-label', button.title + ' (' + categories[icon.category] + ')');
+  button.addEventListener('click', () => copyUrl(icon.rawUrl, button, t('Copied URL for ' + icon.name + '.', '已复制 ' + icon.name + ' 的链接。')));
 
   const image = document.createElement('img');
   image.src = icon.image;
@@ -285,8 +349,8 @@ function render() {
   results.classList.toggle('sr', visible.length > 0);
   results.classList.toggle('empty', visible.length === 0);
   results.textContent = visible.length
-    ? `${visible.length} ${visible.length === 1 ? 'icon' : 'icons'}`
-    : 'No matching icons.';
+    ? t(visible.length + (visible.length === 1 ? ' icon' : ' icons'), '共 ' + visible.length + ' 个图标')
+    : t('No matching icons.', '没有找到匹配的图标。');
 }
 
 async function loadIcons() {
@@ -312,7 +376,7 @@ async function loadIcons() {
     render();
   } catch (error) {
     results.classList.add('empty');
-    results.textContent = 'Could not load icons. Refresh to try again.';
+    results.textContent = t('Could not load icons. Refresh to try again.', '图标加载失败，请刷新重试。');
     console.error(error);
   }
 }
@@ -321,7 +385,7 @@ function setupIconSubscription() {
   const url = new URL('./surge-icons.json', document.baseURI).href;
   const button = document.querySelector('#copy-icon-set');
   const status = document.querySelector('#subscription-copy-status');
-  button.addEventListener('click', () => copyUrl(url, button, 'Subscription URL copied', status));
+  button.addEventListener('click', () => copyUrl(url, button, t('Subscription URL copied', '已复制订阅链接'), status));
   button.hidden = false;
 
   const encodedUrl = encodeURIComponent(url);
@@ -336,6 +400,7 @@ function setupIconSubscription() {
   }
 }
 
+setupLanguage();
 setupTheme();
 setupIconSubscription();
 loadIcons();
