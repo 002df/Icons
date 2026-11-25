@@ -69,7 +69,6 @@ h1{font-size:clamp(42px,6.1vw,67px);line-height:1.07;letter-spacing:-.056em;marg
 .card .icon-copy:hover{border-color:var(--red)}
 .card img{width:50px;height:50px;max-width:70%}
 .card .name{max-width:100%;font-size:11px;line-height:1.4;font-weight:500;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.gallery-hint{color:var(--muted);font-size:12px;margin:-4px 0 12px}
 .empty{grid-column:1/-1;padding:22px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
 .footer{display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin:40px auto 24px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:12px}
 .footer .rights{grid-column:1/-1}
@@ -154,7 +153,7 @@ dialog::backdrop{background:#10191b80}
         <button type="button" data-category="groups" aria-pressed="false">Proxy groups <span></span></button>
         <button type="button" data-category="flags" aria-pressed="false">Regions <span></span></button>
 
-</div><label class="search"><span class="sr">Search icons</span><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="6.7" cy="6.7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input type="search" id="search" placeholder="Search icons…" autocomplete="off"></label></div><p class="gallery-hint">Click an icon to copy its URL.</p><p id="results" role="status"></p><ul class="grid" id="icon-grid" role="list"></ul></section>
+</div><label class="search"><span class="sr">Search icons</span><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="6.7" cy="6.7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input type="search" id="search" placeholder="Search icons…" autocomplete="off"></label></div><p id="results" role="status"></p><ul class="grid" id="icon-grid" role="list"></ul></section>
 <footer class="footer"><span>NetKit</span><a class="back-top" href="#top">Back to top ↑</a><p class="rights"><span>Icon copyrights belong to their respective rights holders. To report infringement, please </span><a href="https://github.com/jennieveloramae/NetKit/issues">open an issue</a><span>.</span></p></footer><noscript>Enable JavaScript to browse and search the icon collection. <span lang="zh-Hans">请启用 JavaScript 以浏览和搜索图标。</span></noscript></main>
 <p id="copy-status" class="feedback" role="status"></p>
 <dialog id="copy-dialog" aria-labelledby="copy-title"><form method="dialog"><h2 id="copy-title">Copy URL</h2><p>Select and copy the link below.</p><input id="manual-url" aria-label="URL to copy" readonly autofocus><button>Done</button></form></dialog>
@@ -215,7 +214,6 @@ function setupLanguage() {
   }
   set('.search .sr', '搜索图标');
   attr('#search', 'placeholder', '搜索图标…');
-  set('.gallery-hint', '点击图标即可复制链接。');
   set('.footer .back-top', '返回顶部 ↑');
   set('.footer .rights span:first-child', '图标版权归各自权利人所有。如有侵权，请');
   set('.footer .rights a', '提交 Issue');
