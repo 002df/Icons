@@ -1,10 +1,10 @@
-# NetKit
+# Jennie Icons
 
 **[English README →](README.md)**
 
 应用、地区与代理策略组的透明 PNG 图标库。
 
-## Jennie Icons
+## 图标站
 
 **[打开中文图标站](https://icons.jennie.win/?lang=zh)**
 

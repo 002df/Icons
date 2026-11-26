@@ -1,10 +1,10 @@
-# NetKit
+# Jennie Icons
 
 **[中文文档 →](README.zh-CN.md)**
 
 A collection of transparent PNG icons for apps, regions, and proxy groups.
 
-## Jennie Icons
+## Icon gallery
 
 **[Open the icon gallery](https://icons.jennie.win/)**
 
