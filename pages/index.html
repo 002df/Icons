@@ -56,8 +56,8 @@ h1{font-size:clamp(42px,6.1vw,67px);line-height:1.07;letter-spacing:-.056em;marg
 .sub-row button:hover,.sub-row a:hover{border-color:var(--red)}
 .gallery-section{margin-top:35px}
 #gallery:focus,#gallery:target{outline:none}
-@media (hover:none){.sub-row .gallery-jump:hover{border-color:var(--line)}}
-.sub-row .gallery-jump{-webkit-tap-highlight-color:transparent}
+@media (hover:none){.sub-row #single-icon-help:hover{border-color:var(--line)}}
+.sub-row #single-icon-help{-webkit-tap-highlight-color:transparent}
 .gallery-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;margin-bottom:15px}
 .category-list{display:flex;flex-wrap:wrap;gap:7px}
 .category-list button{display:inline-flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px 12px;color:var(--muted);font-size:13px;white-space:nowrap}
@@ -102,7 +102,7 @@ dialog::backdrop{background:#10191b80}
 @media(max-width:350px){.topnav{display:none}}
 .sub-row [hidden], .header-action[hidden], .theme-icon[hidden] { display: none; }
 .sub-row .subscription-icon-egern { width: 29px; height: 29px; }
-.sub-row #copy-icon-set, .sub-row a[href="#gallery"] { gap: .6rem; }
+.sub-row #copy-icon-set, .sub-row #single-icon-help { gap: .6rem; }
 .category-list button span { font-size: 11px; font-variant-numeric: tabular-nums; opacity: .86; }
 .grid { list-style: none; padding: 0; margin: 0; }
 .card .icon-copy[data-copied] { border-color: var(--teal); }
@@ -145,10 +145,10 @@ dialog::backdrop{background:#10191b80}
             <img class="subscription-icon-egern" src="./apps/Egern.png" alt="" width="32" height="32">
             <img src="./apps/FlClash.png" alt="" width="24" height="24">
           </button>
-          <a class="subscription-control gallery-jump" href="#gallery" title="Copy an individual icon URL below for your configuration or a compatible client." aria-label="Mihomo and sing-box: browse individual icons to copy a URL for your configuration or a compatible client.">
+          <button type="button" id="single-icon-help" class="subscription-control" title="Click an icon below to copy its URL, then paste it into your configuration." aria-label="Mihomo and sing-box: Click an icon below to copy its URL, then paste it into your configuration." hidden>
             <img src="./apps/Mihomo.png" alt="" width="24" height="24">
             <img src="./apps/sing-box.png" alt="" width="24" height="24">
-          </a>
+          </button>
 
 </div><p class="sub-backup"><span>If this domain is unavailable, use the </span><a href="https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json">GitHub Raw backup</a><span>.</span></p><p id="subscription-copy-status" class="feedback" role="status"></p></section>
 </section>
@@ -212,9 +212,9 @@ function setupLanguage() {
   }
   attr('#copy-icon-set', 'title', '复制图标集链接');
   attr('#copy-icon-set', 'aria-label', '复制 Surge、Egern 和 FlClash 的图标集链接');
-  const customHint = '复制下方的单个图标链接，用于配置文件或兼容的客户端。';
-  attr('.sub-row a[href="#gallery"]', 'title', customHint);
-  attr('.sub-row a[href="#gallery"]', 'aria-label', 'Mihomo 和 sing-box：' + customHint);
+  const customHint = '\u70b9\u51fb\u4e0b\u65b9\u56fe\u6807\u590d\u5236\u94fe\u63a5\uff0c\u518d\u7c98\u8d34\u5230\u914d\u7f6e\u6587\u4ef6\u4e2d\u3002';
+  attr('#single-icon-help', 'title', customHint);
+  attr('#single-icon-help', 'aria-label', 'Mihomo 和 sing-box：' + customHint);
   set('#section-name', '全部图标');
   attr('.category-list', 'aria-label', '图标分类');
   for (const filter of filters) {
@@ -412,6 +412,14 @@ function setupIconSubscription() {
   const url = new URL('./surge-icons.json', document.baseURI).href;
   const button = document.querySelector('#copy-icon-set');
   const status = document.querySelector('#subscription-copy-status');
+  const singleIconHelp = document.querySelector('#single-icon-help');
+  singleIconHelp.addEventListener('click', () => {
+    copyStatus.textContent = '';
+    status.textContent = t('Click an icon below to copy its URL, then paste it into your configuration.', '\u70b9\u51fb\u4e0b\u65b9\u56fe\u6807\u590d\u5236\u94fe\u63a5\uff0c\u518d\u7c98\u8d34\u5230\u914d\u7f6e\u6587\u4ef6\u4e2d\u3002');
+    clearTimeout(status.feedbackTimer);
+    status.feedbackTimer = setTimeout(() => { status.textContent = ''; }, 4500);
+  });
+  singleIconHelp.hidden = false;
   button.addEventListener('click', () => copyUrl(url, button, t('Subscription URL copied', '已复制订阅链接'), status));
   button.hidden = false;
 
