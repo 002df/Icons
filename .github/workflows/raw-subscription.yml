@@ -1,0 +1,54 @@
+name: Publish GitHub Raw subscription
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/**'
+      - 'flags/**'
+      - 'groups/**'
+      - 'pages/build.py'
+      - '.github/workflows/raw-subscription.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: raw-subscription
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Generate and publish the backup manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="$RUNNER_TEMP/surge-icons.json"
+          python3 pages/build.py --raw-subscription "$file"
+
+          ref=refs/heads/raw-subscription
+          current="$(git ls-remote origin "$ref")"
+          parent=()
+          if [[ -n "$current" ]]; then
+            git fetch --no-tags origin "$ref"
+            previous="$(git rev-parse FETCH_HEAD)"
+            if git show "$previous:surge-icons.json" | cmp -s - "$file"; then
+              echo "Backup manifest is unchanged."
+              exit 0
+            fi
+            parent=(-p "$previous")
+          fi
+
+          blob="$(git hash-object -w "$file")"
+          tree="$(printf '100644 blob %s\tsurge-icons.json\n' "$blob" | git mktree)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          commit="$(git commit-tree "$tree" "${parent[@]}" -m "Refresh GitHub Raw subscription")"
+          git push origin "$commit:$ref"

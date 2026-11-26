@@ -22,6 +22,7 @@ New icons belong in the root-level category folders. The original `icon/` paths 
 
 - **One-click import:** In the [subscription section](https://icons.jennie.win/#icon-subscription), click the Quantumult X, Loon, or Stash icon.
 - **Subscribe to the icon set:** Use the Surge / Egern / FlClash button to copy the [subscription URL](https://icons.jennie.win/surge-icons.json), then paste it into your client's icon set settings.
+  - [GitHub Raw backup](https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json). Use this if the primary URL is unavailable.
 - **Use a single icon:** Copy its URL from the gallery or use the GitHub Raw examples in this README and paste it into a configuration or interface that supports icon URLs. Paths are case-sensitive.
 
 ### Mihomo example
