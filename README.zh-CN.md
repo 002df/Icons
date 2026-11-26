@@ -12,7 +12,7 @@
 
 | 应用 | 地区 | 策略组 |
 | :---: | :---: | :---: |
-| [<img src="icon/apps/Spotify.png" alt="Spotify" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/apps/Spotify.png) | [<img src="icon/flags/US.png" alt="US" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/flags/US.png) | [<img src="icon/groups/Planet.png" alt="Planet" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/groups/Planet.png) |
+| [<img src="icon/apps/Spotify.png" alt="Spotify" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/apps/Spotify.png) | [<img src="icon/flags/US.png" alt="US" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/flags/US.png) | [<img src="icon/groups/Planet.png" alt="Planet" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/groups/Planet.png) |
 
 点击上方预览可直接打开原始 PNG。图标均为 144 × 144 像素的透明 PNG，分为[应用与服务](icon/apps/)、[地区](icon/flags/)和[代理策略组](icon/groups/)三类。
 
@@ -30,7 +30,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-    icon: https://raw.githubusercontent.com/jennieveloramae/NetKit/main/icon/groups/Planet.png
+    icon: https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/groups/Planet.png
 ```
 
 ## 许可协议
