@@ -71,7 +71,7 @@ function setupTheme() {
   const button = document.querySelector('#theme-switch');
   const system = matchMedia('(prefers-color-scheme: dark)');
   let chosen;
-  try { chosen = localStorage.getItem('netkit-theme'); } catch {}
+  try { chosen = localStorage.getItem('jennie-icons-theme'); } catch {}
   if (chosen !== 'light' && chosen !== 'dark') chosen = null;
 
   function renderTheme() {
@@ -91,7 +91,7 @@ function setupTheme() {
   system.addEventListener('change', renderTheme);
   button.addEventListener('click', () => {
     chosen = button.dataset.next;
-    try { localStorage.setItem('netkit-theme', chosen); } catch {}
+    try { localStorage.setItem('jennie-icons-theme', chosen); } catch {}
     renderTheme();
   });
 }

@@ -1,4 +1,4 @@
-name: Deploy NetKit to GitHub Pages
+name: Deploy Jennie Icons to GitHub Pages
 
 on:
   push:
@@ -23,11 +23,11 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build icon gallery
-        run: python3 pages/build.py "$RUNNER_TEMP/netkit-pages"
+        run: python3 pages/build.py "$RUNNER_TEMP/jennie-icons-pages"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ${{ runner.temp }}/netkit-pages
+          path: ${{ runner.temp }}/jennie-icons-pages
 
   deploy:
     needs: build

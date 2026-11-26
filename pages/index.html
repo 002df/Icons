@@ -6,7 +6,7 @@
 <meta name="description" content="Browse Jennie Icons PNG icons for apps, regions, and proxy groups, and copy their image URLs.">
 <script>
   let initialTheme;
-  try { initialTheme = localStorage.getItem('netkit-theme'); } catch {}
+  try { initialTheme = localStorage.getItem('jennie-icons-theme'); } catch {}
   if (initialTheme !== 'light' && initialTheme !== 'dark') {
     initialTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
