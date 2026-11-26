@@ -55,8 +55,7 @@ h1{font-size:clamp(42px,6.1vw,67px);line-height:1.07;letter-spacing:-.056em;marg
 .sub-row .egern{width:29px;height:29px}
 .sub-row button:hover,.sub-row a:hover{border-color:var(--red)}
 .gallery-section{margin-top:35px}
-#gallery:focus-visible{outline:2px solid var(--red);outline-offset:3px}
-#gallery:focus:not(:focus-visible),#gallery[data-pointer-jump]:focus{outline:none}
+#gallery:focus,#gallery:target{outline:none}
 @media (hover:none){.sub-row .gallery-jump:hover{border-color:var(--line)}}
 .sub-row .gallery-jump{-webkit-tap-highlight-color:transparent}
 .gallery-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;margin-bottom:15px}
@@ -410,15 +409,6 @@ async function loadIcons() {
 }
 
 function setupIconSubscription() {
-  const galleryJump = document.querySelector('.gallery-jump');
-  galleryJump.addEventListener('click', (event) => {
-    // Keep the native fragment navigation and keyboard focus.
-    gallery.toggleAttribute('data-pointer-jump', event.detail > 0 || event.pointerType === 'touch' || event.pointerType === 'pen');
-  });
-  gallery.addEventListener('blur', () => gallery.removeAttribute('data-pointer-jump'));
-  gallery.addEventListener('keydown', () => gallery.removeAttribute('data-pointer-jump'));
-
-
   const url = new URL('./surge-icons.json', document.baseURI).href;
   const button = document.querySelector('#copy-icon-set');
   const status = document.querySelector('#subscription-copy-status');
