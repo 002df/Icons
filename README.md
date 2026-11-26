@@ -12,9 +12,11 @@ Browse by category or search by name. Click an icon in the gallery to copy its G
 
 | Apps | Regions | Proxy groups |
 | :---: | :---: | :---: |
-| [<img src="icon/apps/Spotify.png" alt="Spotify" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/apps/Spotify.png) | [<img src="icon/flags/US.png" alt="US" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/flags/US.png) | [<img src="icon/groups/Planet.png" alt="Planet" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/groups/Planet.png) |
+| [<img src="apps/Spotify.png" alt="Spotify" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Spotify.png) | [<img src="flags/US.png" alt="US" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/US.png) | [<img src="groups/Planet.png" alt="Planet" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Planet.png) |
 
-Click a preview above to open its original PNG. Icons are 144 × 144 px transparent PNGs, organized into [apps and services](icon/apps/), [regions](icon/flags/), and [proxy groups](icon/groups/).
+Click a preview above to open its original PNG. Icons are 144 × 144 px transparent PNGs, organized into [apps and services](apps/), [regions](flags/), and [proxy groups](groups/).
+
+New icons belong in the root-level category folders. The original `icon/` paths are retained for compatibility.
 
 ## Quick start
 
@@ -30,7 +32,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-    icon: https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/groups/Planet.png
+    icon: https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Planet.png
 ```
 
 ## License

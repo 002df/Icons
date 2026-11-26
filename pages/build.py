@@ -16,9 +16,14 @@ def build(output):
     output.mkdir(parents=True)
     shutil.copyfile(ROOT / "pages" / "index.html", output / "index.html")
 
+    # Continue serving old direct image links from the Pages domain.
+    legacy = ROOT / "icon"
+    if legacy.is_dir():
+        shutil.copytree(legacy, output / "icon")
+
     icons = []
     for category in CATEGORIES:
-        relative_directory = Path("icon") / category
+        relative_directory = Path(category)
         source_directory = ROOT / relative_directory
         if not source_directory.exists():
             # Git omits empty directories when the last icon is removed.
@@ -31,7 +36,7 @@ def build(output):
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(source, destination)
 
-            url_path = f"icon/{category}/{quote(source.name, safe='')}"
+            url_path = f"{category}/{quote(source.name, safe='')}"
             icons.append({
                 "category": category,
                 "name": source.stem,

@@ -12,9 +12,11 @@
 
 | 应用 | 地区 | 策略组 |
 | :---: | :---: | :---: |
-| [<img src="icon/apps/Spotify.png" alt="Spotify" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/apps/Spotify.png) | [<img src="icon/flags/US.png" alt="US" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/flags/US.png) | [<img src="icon/groups/Planet.png" alt="Planet" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/groups/Planet.png) |
+| [<img src="apps/Spotify.png" alt="Spotify" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Spotify.png) | [<img src="flags/US.png" alt="US" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/US.png) | [<img src="groups/Planet.png" alt="Planet" width="64" height="64">](https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Planet.png) |
 
-点击上方预览可直接打开原始 PNG。图标均为 144 × 144 像素的透明 PNG，分为[应用与服务](icon/apps/)、[地区](icon/flags/)和[代理策略组](icon/groups/)三类。
+点击上方预览可直接打开原始 PNG。图标均为 144 × 144 像素的透明 PNG，分为[应用与服务](apps/)、[地区](flags/)和[代理策略组](groups/)三类。
+
+新图标请放到根目录下对应的分类文件夹。旧的 `icon/` 路径继续保留，以兼容已使用的链接。
 
 ## 使用指南
 
@@ -30,7 +32,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-    icon: https://raw.githubusercontent.com/jennieveloramae/Icons/main/icon/groups/Planet.png
+    icon: https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Planet.png
 ```
 
 ## 许可协议
