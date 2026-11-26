@@ -8,7 +8,7 @@ A collection of transparent PNG icons for apps, regions, and proxy groups.
 
 **[Open the icon gallery](https://icons.jennie.win/)**
 
-Browse by category or search by name. Click an icon in the gallery to copy its GitHub Raw URL.
+Browse by category or search by name. Click an icon in the gallery to copy its URL on icons.jennie.win.
 
 | Apps | Regions | Proxy groups |
 | :---: | :---: | :---: |
@@ -22,7 +22,7 @@ New icons belong in the root-level category folders. The original `icon/` paths 
 
 - **One-click import:** In the [subscription section](https://icons.jennie.win/#icon-subscription), click the Quantumult X, Loon, or Stash icon.
 - **Subscribe to the icon set:** Use the Surge / Egern / FlClash button to copy the [subscription URL](https://icons.jennie.win/surge-icons.json), then paste it into your client's icon set settings.
-- **Use a single icon:** Copy its GitHub Raw URL from the gallery and paste it into a configuration or interface that supports icon URLs. Paths are case-sensitive.
+- **Use a single icon:** Copy its URL from the gallery or use the GitHub Raw examples in this README and paste it into a configuration or interface that supports icon URLs. Paths are case-sensitive.
 
 ### Mihomo example
 

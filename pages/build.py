@@ -9,6 +9,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = ("apps", "groups", "flags")
+SITE_ROOT = "https://icons.jennie.win/"
 RAW_ROOT = "https://raw.githubusercontent.com/jennieveloramae/Icons/main/"
 
 
@@ -42,6 +43,7 @@ def build(output):
                 "name": source.stem,
                 "filename": source.name,
                 "image": url_path,
+                "url": SITE_ROOT + url_path,
                 "rawUrl": RAW_ROOT + url_path,
             })
 
@@ -51,7 +53,7 @@ def build(output):
     icon_set = {
         "name": "NetKit Icons",
         "description": "PNG icons for apps, regions, and proxy groups.",
-        "icons": [{"name": icon["name"], "url": icon["rawUrl"]} for icon in icons],
+        "icons": [{"name": icon["name"], "url": icon["url"]} for icon in icons],
     }
     # Keep the published URL for existing subscriptions.
     (output / "surge-icons.json").write_text(
