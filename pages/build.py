@@ -40,7 +40,7 @@ def collect_icons():
 
 def write_subscription(path, icons, *, raw=False):
     field = "rawUrl" if raw else "url"
-    name = "Jennie Icons (GitHub Raw)" if raw else "NetKit Icons"
+    name = "Jennie Icons (GitHub Raw)" if raw else "Jennie Icons"
     icon_set = {
         "name": name,
         "description": "PNG icons for apps, regions, and proxy groups.",
