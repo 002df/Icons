@@ -1,0 +1,578 @@
+{
+  "name": "Jennie Icons (GitHub Raw)",
+  "description": "PNG icons for apps, regions, and proxy groups.",
+  "icons": [
+    {
+      "name": "Amazon",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Amazon.png"
+    },
+    {
+      "name": "AmazonMusic",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AmazonMusic.png"
+    },
+    {
+      "name": "anigamer",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/anigamer.png"
+    },
+    {
+      "name": "Apple",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple.png"
+    },
+    {
+      "name": "AppleRadio",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AppleRadio.png"
+    },
+    {
+      "name": "AppleTV",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AppleTV.png"
+    },
+    {
+      "name": "AppStore",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AppStore.png"
+    },
+    {
+      "name": "BandwagonHost",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BandwagonHost.png"
+    },
+    {
+      "name": "bilibili",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/bilibili.png"
+    },
+    {
+      "name": "Bing",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Bing.png"
+    },
+    {
+      "name": "Clash",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Clash.png"
+    },
+    {
+      "name": "ClashHako",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/ClashHako.png"
+    },
+    {
+      "name": "Claude",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Claude.png"
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Cloudflare.png"
+    },
+    {
+      "name": "Copilot",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Copilot.png"
+    },
+    {
+      "name": "DeepSeek",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/DeepSeek.png"
+    },
+    {
+      "name": "Discord",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Discord.png"
+    },
+    {
+      "name": "Disney+",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Disney%2B.png"
+    },
+    {
+      "name": "Docker",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Docker.png"
+    },
+    {
+      "name": "Dropbox",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Dropbox.png"
+    },
+    {
+      "name": "eBay",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/eBay.png"
+    },
+    {
+      "name": "Egern",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Egern.png"
+    },
+    {
+      "name": "Emby",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Emby.png"
+    },
+    {
+      "name": "EpicGames",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/EpicGames.png"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Facebook.png"
+    },
+    {
+      "name": "FlClash",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/FlClash.png"
+    },
+    {
+      "name": "Gemini",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Gemini.png"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/GitHub.png"
+    },
+    {
+      "name": "GitLab",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/GitLab.png"
+    },
+    {
+      "name": "Gmail",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Gmail.png"
+    },
+    {
+      "name": "Google",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Google.png"
+    },
+    {
+      "name": "GoogleCloud",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/GoogleCloud.png"
+    },
+    {
+      "name": "GoogleDrive",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/GoogleDrive.png"
+    },
+    {
+      "name": "HBOMax",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/HBOMax.png"
+    },
+    {
+      "name": "Hiddify",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Hiddify.png"
+    },
+    {
+      "name": "HomeKit",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/HomeKit.png"
+    },
+    {
+      "name": "Hulu",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Hulu.png"
+    },
+    {
+      "name": "iCloud",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/iCloud.png"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Instagram.png"
+    },
+    {
+      "name": "iQIYI",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/iQIYI.png"
+    },
+    {
+      "name": "JD",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/JD.png"
+    },
+    {
+      "name": "KakaoTalk",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/KakaoTalk.png"
+    },
+    {
+      "name": "Line",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Line.png"
+    },
+    {
+      "name": "Loon",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Loon.png"
+    },
+    {
+      "name": "MangoTV",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/MangoTV.png"
+    },
+    {
+      "name": "McDonalds",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/McDonalds.png"
+    },
+    {
+      "name": "Messenger",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Messenger.png"
+    },
+    {
+      "name": "Meta",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Meta.png"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Microsoft.png"
+    },
+    {
+      "name": "Mihomo",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Mihomo.png"
+    },
+    {
+      "name": "Muse",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Muse.png"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Netflix.png"
+    },
+    {
+      "name": "Notion",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Notion.png"
+    },
+    {
+      "name": "OneDrive",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/OneDrive.png"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/OpenAI.png"
+    },
+    {
+      "name": "OracleCloud",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/OracleCloud.png"
+    },
+    {
+      "name": "Paramount+",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Paramount%2B.png"
+    },
+    {
+      "name": "PayPal",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/PayPal.png"
+    },
+    {
+      "name": "PikPak",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/PikPak.png"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Pinterest.png"
+    },
+    {
+      "name": "PlayStation",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/PlayStation.png"
+    },
+    {
+      "name": "PrimeVideo",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/PrimeVideo.png"
+    },
+    {
+      "name": "QuantumultX",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/QuantumultX.png"
+    },
+    {
+      "name": "Quark",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Quark.png"
+    },
+    {
+      "name": "RackNerd",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/RackNerd.png"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Reddit.png"
+    },
+    {
+      "name": "Rockstar",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Rockstar.png"
+    },
+    {
+      "name": "SamsClub",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/SamsClub.png"
+    },
+    {
+      "name": "Shadowrocket",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Shadowrocket.png"
+    },
+    {
+      "name": "sing-box",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/sing-box.png"
+    },
+    {
+      "name": "Slack",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Slack.png"
+    },
+    {
+      "name": "SpeedTest",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/SpeedTest.png"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Spotify.png"
+    },
+    {
+      "name": "Starbucks",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Starbucks.png"
+    },
+    {
+      "name": "Stash",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Stash.png"
+    },
+    {
+      "name": "Steam",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Steam.png"
+    },
+    {
+      "name": "Surge",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Surge.png"
+    },
+    {
+      "name": "Teams",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Teams.png"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Telegram.png"
+    },
+    {
+      "name": "TelegramClassic",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/TelegramClassic.png"
+    },
+    {
+      "name": "Threads",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Threads.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/TikTok.png"
+    },
+    {
+      "name": "Twitch",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Twitch.png"
+    },
+    {
+      "name": "Walmart",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Walmart.png"
+    },
+    {
+      "name": "WeTV",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/WeTV.png"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/WhatsApp.png"
+    },
+    {
+      "name": "WireGuard",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/WireGuard.png"
+    },
+    {
+      "name": "X",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/X.png"
+    },
+    {
+      "name": "Xbox",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Xbox.png"
+    },
+    {
+      "name": "YOUKU",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/YOUKU.png"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/YouTube.png"
+    },
+    {
+      "name": "YouTubeMusic",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/YouTubeMusic.png"
+    },
+    {
+      "name": "Zoom",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Zoom.png"
+    },
+    {
+      "name": "AI",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/AI.png"
+    },
+    {
+      "name": "Airport",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Airport.png"
+    },
+    {
+      "name": "Auto",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Auto.png"
+    },
+    {
+      "name": "Direct",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Direct.png"
+    },
+    {
+      "name": "Domestic",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Domestic.png"
+    },
+    {
+      "name": "Download",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Download.png"
+    },
+    {
+      "name": "Earth",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Earth.png"
+    },
+    {
+      "name": "Fallback",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Fallback.png"
+    },
+    {
+      "name": "Final",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Final.png"
+    },
+    {
+      "name": "Game",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Game.png"
+    },
+    {
+      "name": "Global",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Global.png"
+    },
+    {
+      "name": "LoadBalance",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/LoadBalance.png"
+    },
+    {
+      "name": "Planet",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Planet.png"
+    },
+    {
+      "name": "Proxy",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Proxy.png"
+    },
+    {
+      "name": "Reject",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Reject.png"
+    },
+    {
+      "name": "Select",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Select.png"
+    },
+    {
+      "name": "Shopping",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Shopping.png"
+    },
+    {
+      "name": "Social",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Social.png"
+    },
+    {
+      "name": "Streaming",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Streaming.png"
+    },
+    {
+      "name": "Test",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/Test.png"
+    },
+    {
+      "name": "UrlTest",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/groups/UrlTest.png"
+    },
+    {
+      "name": "AE",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/AE.png"
+    },
+    {
+      "name": "AR",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/AR.png"
+    },
+    {
+      "name": "AU",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/AU.png"
+    },
+    {
+      "name": "BR",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/BR.png"
+    },
+    {
+      "name": "CA",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/CA.png"
+    },
+    {
+      "name": "CH",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/CH.png"
+    },
+    {
+      "name": "CN",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/CN.png"
+    },
+    {
+      "name": "DE",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/DE.png"
+    },
+    {
+      "name": "FI",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/FI.png"
+    },
+    {
+      "name": "FR",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/FR.png"
+    },
+    {
+      "name": "HK",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/HK.png"
+    },
+    {
+      "name": "IN",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/IN.png"
+    },
+    {
+      "name": "JP",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/JP.png"
+    },
+    {
+      "name": "KR",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/KR.png"
+    },
+    {
+      "name": "MO",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/MO.png"
+    },
+    {
+      "name": "MY",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/MY.png"
+    },
+    {
+      "name": "NG",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/NG.png"
+    },
+    {
+      "name": "NL",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/NL.png"
+    },
+    {
+      "name": "PH",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/PH.png"
+    },
+    {
+      "name": "PL",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/PL.png"
+    },
+    {
+      "name": "SE",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/SE.png"
+    },
+    {
+      "name": "SG",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/SG.png"
+    },
+    {
+      "name": "TH",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/TH.png"
+    },
+    {
+      "name": "TR",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/TR.png"
+    },
+    {
+      "name": "TW",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/TW.png"
+    },
+    {
+      "name": "UA",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/UA.png"
+    },
+    {
+      "name": "UK",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/UK.png"
+    },
+    {
+      "name": "US",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/US.png"
+    },
+    {
+      "name": "VN",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/flags/VN.png"
+    }
+  ]
+}
