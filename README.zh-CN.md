@@ -21,8 +21,13 @@
 ## 使用指南
 
 - **一键导入**：在[图标站](https://icons.jennie.win/?lang=zh#icon-subscription)点击 Quantumult X、Loon 或 Stash 的图标。
-- **订阅图标集**：点击 Surge / Egern / FlClash 的组合按钮复制[订阅链接](https://icons.jennie.win/surge-icons.json)，再粘贴到客户端的图标集设置中。
-  - [GitHub Raw 备用订阅](https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json)：主订阅无法访问时使用。
+
+### 图标集的三种使用方式
+
+1. **主订阅**：把 [icons.jennie.win 订阅](https://icons.jennie.win/surge-icons.json) 粘贴到客户端的图标集设置中。图标站的 Surge / Egern / FlClash 组合按钮复制的就是这个地址。
+2. **备用订阅**：自有域名无法访问时，手动切换到 [GitHub Raw 订阅](https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json)。清单和图片都走 GitHub Raw。
+3. **本地保存或自托管**：[下载仓库 ZIP](https://github.com/jennieveloramae/Icons/archive/refs/heads/main.zip)，从 `apps/`、`flags/`、`groups/` 取出需要的 PNG。客户端支持本地图片就直接导入，也可以放在自己的服务器上，下载后不再依赖上述公开地址。
+
 - **引用单个图标**：从图标站复制链接，或使用本页的 GitHub Raw 示例，用于 Mihomo 等支持图标 URL 的配置或界面。路径区分大小写。
 
 ### Mihomo 策略组示例

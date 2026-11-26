@@ -48,6 +48,8 @@ h1{font-size:clamp(42px,6.1vw,67px);line-height:1.07;letter-spacing:-.056em;marg
 .sub-head h2{font-size:17px;letter-spacing:-.02em}
 .sub-head p{color:var(--muted);font-size:13px}
 .sub-row{display:flex;flex-wrap:wrap;gap:8px}
+.sub-backup{margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+.sub-backup a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .sub-row button,.sub-row a{border:1px solid var(--line);border-radius:11px;display:inline-flex;align-items:center;justify-content:center;min-width:45px;min-height:42px;padding:5px 10px;gap:10px;background:var(--header);text-decoration:none}
 .sub-row img{width:23px;height:23px}
 .sub-row .egern{width:29px;height:29px}
@@ -145,7 +147,7 @@ dialog::backdrop{background:#10191b80}
             <img src="./apps/sing-box.png" alt="" width="24" height="24">
           </a>
 
-</div><p id="subscription-copy-status" class="feedback" role="status"></p></section>
+</div><p class="sub-backup"><span>If this domain is unavailable, use the </span><a href="https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json">GitHub Raw backup</a><span>.</span></p><p id="subscription-copy-status" class="feedback" role="status"></p></section>
 </section>
 <section id="gallery" tabindex="-1" class="gallery-section" aria-labelledby="section-name"><h2 class="sr" id="section-name">All icons</h2><div class="gallery-top"><div class="category-list" role="group" aria-label="Icon categories">
         <button type="button" data-category="all" aria-pressed="true">All <span></span></button>
@@ -197,6 +199,9 @@ function setupLanguage() {
   set('.hero-meta a', '喜欢 Jennie Icons？欢迎在 GitHub 上点个 ⭐ ↗');
   set('#sub-title', '图标订阅');
   set('.sub-head p', '点击图标即可导入或复制链接。');
+  set('.sub-backup span:first-child', '\u81ea\u6709\u57df\u540d\u8bbf\u95ee\u4e0d\u7a33\u5b9a\u65f6\uff0c\u53ef\u4f7f\u7528');
+  set('.sub-backup a', '\u0047\u0069\u0074\u0048\u0075\u0062\u0020\u0052\u0061\u0077\u0020\u5907\u7528\u8ba2\u9605');
+  set('.sub-backup span:last-child', '\u3002');
   const clientNames = { quantumult: 'Quantumult X', loon: 'Loon', stash: 'Stash' };
   for (const link of document.querySelectorAll('[data-icon-app]')) {
     link.title = '一键导入';
@@ -310,6 +315,18 @@ async function copyUrl(url, button, announcement, status = copyStatus) {
   return true;
 }
 
+const mobileImages = window.matchMedia('(max-width: 620px), (max-width: 950px) and (pointer: coarse)');
+const imageObserver = typeof IntersectionObserver === 'function'
+  ? new IntersectionObserver((entries, observer) => {
+      for (const { isIntersecting, target } of entries) {
+        if (!isIntersecting || !target.isConnected) continue;
+        target.src = target.dataset.src;
+        delete target.dataset.src;
+        observer.unobserve(target);
+      }
+    }, { rootMargin: '180px 0px' })
+  : null;
+
 function createCard(icon) {
   const card = document.createElement('li');
   card.className = 'card';
@@ -322,10 +339,14 @@ function createCard(icon) {
   button.addEventListener('click', () => copyUrl(icon.url || new URL(icon.image, "https://icons.jennie.win/").href, button, t('Copied URL for ' + icon.name + '.', '已复制 ' + icon.name + ' 的链接。')));
 
   const image = document.createElement('img');
-  image.src = icon.image;
   image.alt = '';
-  image.loading = 'eager';
   image.decoding = 'async';
+  if (mobileImages.matches && imageObserver) {
+    image.dataset.src = icon.image;
+  } else {
+    image.loading = mobileImages.matches ? 'lazy' : 'eager';
+    image.src = icon.image;
+  }
   button.append(image);
 
   const name = document.createElement('p');
@@ -344,7 +365,11 @@ function render() {
     icon.filename.normalize('NFC').toLowerCase().includes(query)
   ));
 
+  imageObserver?.disconnect();
   gallery.replaceChildren(...visible.map(createCard));
+  if (mobileImages.matches && imageObserver) {
+    gallery.querySelectorAll('img[data-src]').forEach(image => imageObserver.observe(image));
+  }
   results.classList.toggle('sr', visible.length > 0);
   results.classList.toggle('empty', visible.length === 0);
   results.textContent = visible.length

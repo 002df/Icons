@@ -21,8 +21,13 @@ New icons belong in the root-level category folders. The original `icon/` paths 
 ## Quick start
 
 - **One-click import:** In the [subscription section](https://icons.jennie.win/#icon-subscription), click the Quantumult X, Loon, or Stash icon.
-- **Subscribe to the icon set:** Use the Surge / Egern / FlClash button to copy the [subscription URL](https://icons.jennie.win/surge-icons.json), then paste it into your client's icon set settings.
-  - [GitHub Raw backup](https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json). Use this if the primary URL is unavailable.
+
+### Choose how to use the icon set
+
+1. **Primary subscription:** Paste the [icons.jennie.win subscription](https://icons.jennie.win/surge-icons.json) into your client's icon set settings. The Surge / Egern / FlClash button on the website copies this URL.
+2. **Backup subscription:** If the primary domain is unavailable, manually switch to the [GitHub Raw subscription](https://raw.githubusercontent.com/jennieveloramae/Icons/raw-subscription/surge-icons.json). Both its manifest and its images use GitHub Raw.
+3. **Local or self-hosted:** [Download the repository ZIP](https://github.com/jennieveloramae/Icons/archive/refs/heads/main.zip) and keep the PNGs you need from `apps/`, `flags/`, and `groups/`. Import them into your client if it supports local files, or serve them from your own web server. This avoids relying on either public URL after download.
+
 - **Use a single icon:** Copy its URL from the gallery or use the GitHub Raw examples in this README and paste it into a configuration or interface that supports icon URLs. Paths are case-sensitive.
 
 ### Mihomo example
