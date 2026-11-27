@@ -11,7 +11,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = ("apps", "groups", "flags", "mini")
 SITE_ROOT = "https://002df.github.io/Icons/"
-RAW_ROOT = "https://githubusercontent.com/002df/Icons/main/"
+RAW_ROOT = "https://raw.githubusercontent.com/002df/Icons/main/"
 
 
 
