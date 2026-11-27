@@ -14,6 +14,7 @@ SITE_ROOT = "https://github.io"
 RAW_ROOT = "https://githubusercontent.com"
 
 
+
 def collect_icons():
     icons = []
     for category in CATEGORIES:
