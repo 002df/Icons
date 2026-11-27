@@ -1,4 +1,4 @@
-# Jennie Icons
+# 002df Icons
 
 **[中文文档 →](README.zh-CN.md)**
 
