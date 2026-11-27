@@ -9,7 +9,7 @@ from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CATEGORIES = ("apps", "groups", "flags")
+CATEGORIES = ("apps", "groups", "flags", "mini")
 SITE_ROOT = "https://github.io"
 RAW_ROOT = "https://githubusercontent.com"
 
@@ -116,4 +116,3 @@ if __name__ == "__main__":
         write_subscription(args.output, collect_icons(), raw=True)
     else:
         build(args.output)
-
