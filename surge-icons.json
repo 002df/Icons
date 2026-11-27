@@ -3,8 +3,24 @@
   "description": "PNG icons for apps, regions, and proxy groups.",
   "icons": [
     {
+      "name": "AGA",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AGA.png"
+    },
+    {
+      "name": "Alibaba",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Alibaba.png"
+    },
+    {
       "name": "Amazon",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Amazon.png"
+    },
+    {
+      "name": "Amazon2",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Amazon2.png"
+    },
+    {
+      "name": "Amazon_3",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Amazon_3.png"
     },
     {
       "name": "AmazonMusic",
@@ -19,6 +35,38 @@
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple.png"
     },
     {
+      "name": "Apple_Fitness+",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_Fitness%2B.png"
+    },
+    {
+      "name": "Apple_Fitness+_Letter",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_Fitness%2B_Letter.png"
+    },
+    {
+      "name": "Apple_Fitness",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_Fitness.png"
+    },
+    {
+      "name": "Apple_Music",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_Music.png"
+    },
+    {
+      "name": "Apple_News",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_News.png"
+    },
+    {
+      "name": "Apple_TV",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_TV.png"
+    },
+    {
+      "name": "Apple_TV_Plus",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_TV_Plus.png"
+    },
+    {
+      "name": "Apple_Update",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Apple_Update.png"
+    },
+    {
       "name": "AppleRadio",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AppleRadio.png"
     },
@@ -31,16 +79,80 @@
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AppStore.png"
     },
     {
+      "name": "AR",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/AR.png"
+    },
+    {
+      "name": "Area",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Area.png"
+    },
+    {
+      "name": "Azure",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Azure.png"
+    },
+    {
+      "name": "Bahamut",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Bahamut.png"
+    },
+    {
       "name": "BandwagonHost",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BandwagonHost.png"
+    },
+    {
+      "name": "BBC_iPlayer",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BBC_iPlayer.png"
+    },
+    {
+      "name": "BBC_iPlayer_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BBC_iPlayer_1.png"
+    },
+    {
+      "name": "BBC_iPlayer_2",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BBC_iPlayer_2.png"
+    },
+    {
+      "name": "BGP",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BGP.png"
     },
     {
       "name": "bilibili",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/bilibili.png"
     },
     {
+      "name": "bilibili_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/bilibili_1.png"
+    },
+    {
       "name": "Bing",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Bing.png"
+    },
+    {
+      "name": "Blinkload_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Blinkload_1.png"
+    },
+    {
+      "name": "BosLife",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BosLife.png"
+    },
+    {
+      "name": "BosLife_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/BosLife_1.png"
+    },
+    {
+      "name": "Cat",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Cat.png"
+    },
+    {
+      "name": "Catnet",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Catnet.png"
+    },
+    {
+      "name": "CC",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/CC.png"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/ChatGPT.png"
     },
     {
       "name": "Clash",
@@ -63,6 +175,26 @@
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Copilot.png"
     },
     {
+      "name": "Copilot_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Copilot_1.png"
+    },
+    {
+      "name": "Cryptocurrency",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Cryptocurrency.png"
+    },
+    {
+      "name": "Cryptocurrency_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Cryptocurrency_1.png"
+    },
+    {
+      "name": "Cryptocurrency_2",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Cryptocurrency_2.png"
+    },
+    {
+      "name": "Cryptocurrency_3",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Cryptocurrency_3.png"
+    },
+    {
       "name": "DeepSeek",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/DeepSeek.png"
     },
@@ -73,6 +205,22 @@
     {
       "name": "Disney+",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Disney%2B.png"
+    },
+    {
+      "name": "Disney+_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Disney%2B_1.png"
+    },
+    {
+      "name": "Disney+_2",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Disney%2B_2.png"
+    },
+    {
+      "name": "Disney+_3",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Disney%2B_3.png"
+    },
+    {
+      "name": "Disney_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Disney_1.png"
     },
     {
       "name": "Docker",
@@ -95,12 +243,28 @@
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Emby.png"
     },
     {
+      "name": "Emby_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Emby_1.png"
+    },
+    {
       "name": "EpicGames",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/EpicGames.png"
     },
     {
       "name": "Facebook",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Facebook.png"
+    },
+    {
+      "name": "FI",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/FI.png"
+    },
+    {
+      "name": "Final",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Final.png"
+    },
+    {
+      "name": "Final_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Final_1.png"
     },
     {
       "name": "FlClash",
@@ -331,8 +495,28 @@
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/TikTok.png"
     },
     {
+      "name": "TikTok_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/TikTok_1.png"
+    },
+    {
+      "name": "TikTok_2",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/TikTok_2.png"
+    },
+    {
       "name": "Twitch",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Twitch.png"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Twitter.png"
+    },
+    {
+      "name": "Viu",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Viu.png"
+    },
+    {
+      "name": "ViuTV",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/ViuTV.png"
     },
     {
       "name": "Walmart",
@@ -345,6 +529,10 @@
     {
       "name": "WeTV",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/WeTV.png"
+    },
+    {
+      "name": "WeTV_Letter",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/WeTV_Letter.png"
     },
     {
       "name": "WhatsApp",
@@ -361,6 +549,14 @@
     {
       "name": "Xbox",
       "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Xbox.png"
+    },
+    {
+      "name": "Yahoo",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Yahoo.png"
+    },
+    {
+      "name": "Yahoo_1",
+      "url": "https://raw.githubusercontent.com/jennieveloramae/Icons/main/apps/Yahoo_1.png"
     },
     {
       "name": "YOUKU",
