@@ -6,7 +6,7 @@ A collection of transparent PNG icons for apps, regions, and proxy groups.
 
 ## Icon gallery
 
-**[Open the icon gallery](https://github.io)**
+**[Open the icon gallery](https://002df.github.io)**
 
 Browse by category or search by name. Click an icon in the gallery to copy its URL on 002df.github.io/Icons.
 
