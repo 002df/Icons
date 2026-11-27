@@ -10,8 +10,8 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = ("apps", "groups", "flags")
-SITE_ROOT = "https://icons.jennie.win/"
-RAW_ROOT = "https://raw.githubusercontent.com/jennieveloramae/Icons/main/"
+SITE_ROOT = "https://github.io"
+RAW_ROOT = "https://githubusercontent.com"
 
 
 def collect_icons():
@@ -116,3 +116,4 @@ if __name__ == "__main__":
         write_subscription(args.output, collect_icons(), raw=True)
     else:
         build(args.output)
+
