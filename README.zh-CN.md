@@ -38,7 +38,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-    icon: https://[删掉我]://githubusercontent.com
+    icon: https://://githubusercontent.com
 ```
 
 ## 许可协议
