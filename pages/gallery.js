@@ -1,6 +1,7 @@
 const isChinese = new URLSearchParams(location.search).get('lang') === 'zh';
 const t = (en, zh) => isChinese ? zh : en;
-const categories = { apps: t('Apps', '应用'), flags: t('Regions', '地区'), groups: t('Proxy groups', '代理策略组') };
+const categories = { apps: t('Apps', '应用'), flags: t('Regions', '地区'), groups: t('Proxy groups', '代理策略组'), mini: t('Mini', '迷你') };
+
 const search = document.querySelector('#search');
 const filters = document.querySelectorAll('[data-category]');
 const results = document.querySelector('#results');
